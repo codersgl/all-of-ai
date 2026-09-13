@@ -1,0 +1,27 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# 数据集（torchvision 下载到本地，不入库）
+# 注意：不能用 DataSets/ 直接忽略，否则下面的 ! 反忽略不生效
+DataSets/*
+!DataSets/.gitkeep
+
+# 训练产物
+results/
+*.pt
+*.pth
+*.ckpt
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+.DS_Store
+*.log
